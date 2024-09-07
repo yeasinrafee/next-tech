@@ -15,7 +15,10 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: 'Next Tech',
+  title: {
+    default: 'Next Tech',
+    template: '%s | Next Tech',
+  },
   description: 'Next Tech is a multi purpose application for developers',
 };
 

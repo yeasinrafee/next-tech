@@ -70,7 +70,7 @@ export const techBlogs = [
   },
   {
     id: 8,
-    title: 'AR vs VR: What’s the Difference?',
+    title: 'AR vs VR: What’s the Difference between them?',
     category: 'AR/VR',
     details:
       'Augmented reality (AR) and virtual reality (VR) are two technologies that are transforming the way we interact with the digital world. While AR enhances the real world by overlaying digital content onto it, VR immerses users in a completely virtual environment. Both have unique applications: AR is widely used in mobile games like Pokémon Go, industrial training, and retail, where customers can try products virtually. VR, on the other hand, is commonly used in gaming, virtual tourism, and immersive training environments. While AR is more accessible through smartphones and tablets, VR requires specialized hardware such as headsets. As these technologies evolve, they are expected to converge in the form of mixed reality.',

@@ -1,7 +1,12 @@
-'use client';
-
 import { techBlogs } from '@/data/blogData';
+import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Blogs',
+  description: 'Blogs Page of Next Tech',
+  keywords: ['Blogs', 'Tech Blog', 'Technology', 'Next JS', 'Next Tech'],
+};
 
 const Blogs = () => {
   const blogs = techBlogs;
@@ -16,13 +21,20 @@ const Blogs = () => {
                 src={blog.image}
                 alt={blog.title}
               />
+              {/* <Image
+                className='rounded-lg'
+                src={blog.image}
+                alt={blog.title}
+                height={180}
+                width={300}
+              /> */}
             </div>
-            <div className='text-left space-y-1'>
+            <div className='text-left space-y-1 px-1'>
               <h2 className='pt-4 font-semibold text-lg'>{blog.title}</h2>
               <p className='text-sm'>
                 Category: <span className='text-gray-400'>{blog.category}</span>
               </p>
-              <p className='text-sm text-gray-400'>
+              <p className='text-sm text-gray-400 text-justify'>
                 {blog.details.length > 100
                   ? blog.details.slice(0, 100)
                   : blog.details}
